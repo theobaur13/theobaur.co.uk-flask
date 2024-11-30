@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Theodor Hui Ren Baur</title>
+        <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+        <link rel="stylesheet" href="static/css/github-calendar-responsive.css"/>
+        <link rel="icon" href="static/img/theo-picture-3.ico" type="image/x-icon" sizes="16x16">
+        <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');</style>
+        <style>
+            @font-face {
+            font-family: 'GitLab Sans';
+            src: url('static/fonts/GitLabSans.ttf') format('truetype');
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR1VJVCE16"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MR1VJVCE16');
+        </script>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            <p>
+                Project mock-up images made using <b><a href="https://previewed.app/template/93BCF4A3">Previewed</a></b><br>
+                GitHub contribution calendar made by <b><a href="https://github.com/Bloggify/github-calendar">Bloggify</a></b>
+            </p>
+            <h4>©2024 Theodor Baur. All rights reserved</h4>
+            <div class="center-footer">
+                <p>
+                    <a class="icon" href="https://github.com/theobaur13">
+                        <img src="static/img/github-mark.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                    <a class="icon" href="https://www.linkedin.com/in/theobaur/">
+                        <img src="static/img/LI-In-Bug.png" alt="LinkedIn Logo" width="16" height="16" class="invert"/>
+                    </a>
+                    <a class="icon" href="https://www.flickr.com/photos/theobaur/albums">
+                        <img src="static/img/flickr.png" alt="Flickr Logo" width="16" height="16" class="invert"/>
+                    </a> 
+                </p>
+            </div>
+        </footer>
+
+        <script>
+            var toggle = document.getElementById("dark-mode-toggle");
+            toggle.onclick = function() {
+                document.body.classList.toggle("dark-theme");
+                if (document.body.classList.contains("dark-theme")) {
+                    toggle.innerHTML = "🌞";
+        
+                    // invert all images with class="icon"
+                    var icons = document.getElementsByClassName("invert");
+                    for (var i = 0; i < icons.length; i++) {
+                        icons[i].style.filter = "invert(1)";
+                    }
+                } else {
+                    toggle.innerHTML = "🌒";
+        
+                    // revert all images with class="icon"
+                    var icons = document.getElementsByClassName("invert");
+                    for (var i = 0; i < icons.length; i++) {
+                        icons[i].style.filter = "invert(0)";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

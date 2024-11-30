@@ -1,0 +1,361 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="gradient">
+    <div class="navbar">
+        <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#work-experience">work experience</a></li>
+        </ul>
+        <div style="cursor: pointer;" id="dark-mode-toggle">🌒</div>
+    </div>
+
+    <div class="top" id="about">
+            <header>
+                <img src="static/img/theo-picture-3.jpg" alt="Profile Picture" class="header-img">
+
+                <div class="header-text">
+                    <h1 id=">name">
+                        <!-- Theodor Hui Ren Baur -->
+                    </h1>
+                    <hr>
+                    <h4>
+                        Cardiff University / Artificial Intelligence (MSc)
+                        <br>
+                        baurt@cardiff.ac.uk
+                    </h4>
+                    <p>
+                        I am a recent graduate from Cardiff University with a first-class degree in BSc Computer Science, currently pursuing a Master's Degree in MSc Artificial Intelligence. My interests lie in artificial intelligence, machine learning, and web development. I am open to opportunities in graduate schemes or employment in related fields.
+                    </p>
+                </div>      
+            </header>
+            
+            <hr>
+
+            <div class="skills-section">
+                <h5 style="text-align: center;">MY SKILLS</h5>
+
+                <div class="skill-bar">
+                    <div class="btn-scroll" width="24" height="24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left invert" id="btn-scroll-left">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </div>
+
+                    <div class="skills">
+                        <div class="skillbox">
+                            <img src="static/img/python-logo-only.png" alt="Python" width="40" height="40"/>
+                            <p>Python</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/java.png" alt="Java" width="40" height="40"/>
+                            <p>Java</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/javascript.png" alt="JavaScript" width="40" height="40"/>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/git.png" alt="Git" width="40" height="40"/>
+                            <p>Git</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/matlab.png" alt="MATLAB" width="40" height="40"/>
+                            <p>MATLAB</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/sql.png" alt="SQL" width="40" height="40" class="invert"/>
+                            <p>SQL</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/html.png" alt="HTML" width="40" height="40"/>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/css.png" alt="CSS" width="40" height="40"/>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skillbox">
+                            <img src="static/img/flask.png" alt="Flask" width="40" height="40" class="invert"/>
+                            <p>Flask</p>
+                        </div>
+                    </div>
+
+                    <div class="btn-scroll" width="24" height="24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right invert" id="btn-scroll-right">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="contributions-section">
+            <h5 style="text-align: center;">MY CONTRIBUTIONS</h5>
+
+            <div class="calendar"></div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    var elements = document.getElementsByClassName("contrib-column");
+                    for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.display = "none";
+                    }
+                });
+            </script>
+            </div>
+
+            <hr>
+
+            <div class="socials">
+                <div class="socials-link-wrapper" style="background: radial-gradient(at 0% 10%, #FFFFFF 0%, #FFD1BF 80%, #CEB3EF 100%);">
+                    <a href="https://theobaur.co.uk/static/pdf/CV.pdf" class="socials-link" style="color: #E24329; font-weight:bold;">CV</a>
+                </div>
+
+                <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #c8d8c9 80%, #a6ddaf 100%);">
+                    <a href="https://github.com/theobaur13" class="socials-link" style="color: #272727; font-weight:bold;">GitHub</a>
+                </div>
+
+                <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #cccdcf 80%, #b9bbbd 100%);">
+                    <a href="https://www.linkedin.com/in/theobaur/" class="socials-link" style="color: #0077b5;font-weight:bold; ">LinkedIn</a>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="projects" id="projects">
+    <h2>
+        >projects
+    </h2>
+
+    <div class="project scroll" data-rate="-1" scale-rate="0.6">
+        <div class="project-text">
+            <h1>ESOTERIC - Elasticsearch Semantic Optimised Text Extraction Retrieval from Information Corpus</h1>
+            <p>
+                ESOTERIC is a tool that uses natural language processing to automatically retrieve and verify evidence for a given input claim.
+                It is designed to assist fact-checkers and journalists in verifying claims made in news articles and other sources.
+                ESOTERIC uses the FEVER dataset (Fact Extraction and VERification) as its source of information.
+                It uses a multitude of different language models to perform various NLP tasks and even fine-tunes models to improve performance.
+                It is wrapped in a Flask website that allows users to input a claim and view the evidence retrieved by the tool.
+            </p>
+            <p>
+                ESOTERIC was my final year individual project for my degree in BSc Computer Science at Cardiff University and was awarded a grade of 84%.
+            </p>
+            <hr align="left">
+            <h5>Machine Learning / NLP / Hugging Face / Elasticsearch / Python / HTML / CSS / JavaScript</h5>
+            <div class="project-links">
+                <div class="project-link-wrapper">
+                    <a href="https://github.com/theobaur13/ESOTERIC" class="projectlink"><b>Source</b></a>
+                    <a href="https://github.com/theobaur13/ESOTERIC">
+                        <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+                <div class="project-link-wrapper">
+                    <a href="https://github.com/theobaur13/ESOTERIC-website" class="projectlink"><b>Website</b></a>
+                    <a href="https://github.com/theobaur13/ESOTERIC-website">
+                        <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+                <div class="project-link-wrapper">
+                    <a href="https://theobaur.co.uk/static/pdf/ESOTERIC-report.pdf" class="projectlink"><b>Report</b></a>
+                    <a href="https://theobaur.co.uk/static/pdf/ESOTERIC-report.pdf">
+                        <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img class="scroll" src="static/img/ESOTERIC.jpeg" alt="ESOTERIC" data-rate="0" scale-rate="0">
+    </div>
+
+    <div class="project scroll" data-rate="-1" scale-rate="0.6">
+        <div class="project-text">
+            <h1>Tool Sharing Website</h1>
+            <p>
+                A Flask-based website designed to let users borrow tools from one another. This website uses Stripe to manage deposit 
+                payments and returns. Google Maps API tools are used to display an interactive map, calculate the distances for
+                location searching, as well as geocoding location data. SQLite is used to manage the database. The website enables users to
+                create an account, search for tools based on keywords or location, borrow tools by paying a deposit which is returned when the
+                tool is returned, message other users using a simple chat system and report and open disputes with other users.
+            </p>
+            <hr align="left">
+            <h5>Python / HTML / CSS / JavaScript / SQLite</h5>
+            <div class="project-links">
+                <div class="project-link-wrapper">
+                    <a href="https://github.com/theobaur13/tool-sharing-website" class="projectlink"><b>Github</b></a>
+                    <a href="https://github.com/theobaur13/tool-sharing-website">
+                        <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+                <div class="project-link-wrapper">
+                    <a href="https://www.youtube.com/watch?v=IL8xZn2OB3A" class="projectlink"><b>Demo</b></a>
+                    <a href="https://www.youtube.com/watch?v=IL8xZn2OB3A">
+                        <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img class="scroll" src="static/img/tool-sharing-website-1.png" alt="Tool Sharing Website" data-rate="0" scale-rate="0">
+    </div>
+
+    <div class="project scroll" data-rate="-1" scale-rate="0.6">
+        <div class="project-text">
+            <h1>AI Playlist Name Generator</h1>
+            <p>
+                A Flask-based website hosted using Vercel that enables users to upload their Apple Music playlists and generate playlist names using GPT-3.5. The Apple Music
+                API is used to connect to the user's account and retrieve both their playlists and the songs inside each playlist. The OpenAI API 
+                <i>text-davinci-003 </i>model is used to generate names for the playlists based on the songs inside them.
+            </p>
+                <hr align="left">
+            <h5>Python / HTML / CSS / JavaScript</h5>
+            <div class="project-links">
+                <div class="project-link-wrapper">
+                    <a href="https://github.com/theobaur13/playlist-name-generator" class="projectlink"><b>Github</b></a>
+                    <a href="https://github.com/theobaur13/playlist-name-generator">
+                        <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+                <div class="project-link-wrapper">
+                    <a href="https://www.aiplaylistnamegen.com/" class="projectlink"><b>Live Site</b></a>
+                    <a href="https://www.aiplaylistnamegen.com/">
+                        <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img class="scroll" src="static/img/ai-playlist-name-generator-2.png" alt="Tool Sharing Website" data-rate="0" scale-rate="0">
+    </div>
+
+    <div class="project scroll" data-rate="-1" scale-rate="0.6">
+        <div class="project-text">
+            <h1>Personal Website</h1>
+            <p>
+                A simple static website (this one) hosted on Netlify designed to showcase my current and upcoming projects . This website uses my own custom CSS stylesheet and JavaScript to display animations.
+            </p>
+                <hr align="left">
+            <h5>HTML / CSS / JavaScript</h5>
+            <div class="project-links">
+                <div class="project-link-wrapper">
+                    <a href="https://github.com/theobaur13/theobaur.co.uk" class="projectlink"><b>Github</b></a>
+                    <a href="https://github.com/theobaur13/theobaur.co.uk">
+                        <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+                <div class="project-link-wrapper">
+                    <a href="https://www.theobaur.co.uk/" class="projectlink"><b>Live Site</b></a>
+                    <a href="https://www.theobaur.co.uk/">
+                        <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project scroll" data-rate="-1" scale-rate="0.6">
+        <div class="project-text">
+            <h1>Rate My Student Home Cardiff</h1>
+            <p>
+                A website designed to let students rate their student homes in Cardiff. This website uses Google Maps API tools to display an interactive map.
+            </p>
+                <hr align="left">
+            <h5>Python / HTML / CSS / JavaScript / SQLite</h5>
+            <div class="project-links">
+                <div class="project-link-wrapper">
+                    <a href="https://github.com/GrLdev/Rate-My-Student-Home" class="projectlink"><b>Github</b></a>
+                    <a href="https://github.com/GrLdev/Rate-My-Student-Home">
+                        <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="projects" id="projects">
+    <h2>
+        >projects
+    </h2>
+
+    {% for project in projects %}
+        <div class="project scroll" data-rate="-1" scale-rate="0.6">
+            <div class="project-text">
+                <h1>{{ project.name }}</h1>
+                <p>
+                    {{ project.description | safe}}
+                </p>
+                <hr align="left">
+                <h5>{{ project.skills | join(' / ') }}</h5>
+                <div class="project-links">
+                    {% for link in project.links %}
+                        <div class="project-link-wrapper">
+                            <a href="{{ link.url }}" class="projectlink"><b>{{ link.text }}</b></a>
+                            <a href="{{ link.url }}">
+                                {% if link.class == 'github' %}
+                                    <img src="static/img/github-mark-white.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                                {% elif link.class == 'live' %}
+                                    <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
+                                {% elif link.class == 'document' %}
+                                    <img src="static/img/link.png" alt="Link" width="16" height="16" class="invert"/>
+                                {% endif %}
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% if project.image %}
+                <img class="scroll" src="{{ project.image }}" alt="{{ project.title }}" data-rate="0" scale-rate="0">
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+<div class="work-experience" id="work-experience">
+    <h2>
+        >work experience
+    </h2>
+    {% for experience in work_experience %}
+        <div class="work-experience-section scroll" data-rate="-1" scale-rate="0.6">
+            <div class="work-experience-text">
+                <h3>{{ experience.company }}</h3>
+                <h4>{{ experience.role }}</h4>
+                <p>
+                    {{ experience.description }}
+                </p>
+                <h5>{{ experience.skills | join(' / ') }}</h5>
+            </div>
+            <div class="work-experience-dates">
+                <h5>
+                {% for date in experience.dates %}
+                    {{ date }}<br>
+                {% endfor %}
+                </h5>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Target the specific element with the long class list
+        const element = document.querySelector('.js-calendar-graph.mx-md-2.mx-3.d-flex.flex-column.flex-items-end.flex-xl-items-center.overflow-hidden.pt-1.is-graph-loading.graph-canvas.ContributionCalendar.height-full.text-center');
+    
+        // Check if the element exists to avoid errors
+        if (element) {
+        // Set the overflow style to 'none'
+        element.style.overflowX = 'hidden';
+        }
+    });
+</script>
+<script src="static/js/typewriter.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script src="static/js/scrollbar.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    GitHubCalendar(".calendar", "theobaur13", { responsive: true });
+</script>
+{% endblock %}

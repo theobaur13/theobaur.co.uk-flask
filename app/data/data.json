@@ -1,0 +1,109 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "ESOTERIC - Elasticsearch Semantic Optimised Text Extraction Retrieval from Information Corpus",
+            "description": "ESOTERIC is a tool that uses natural language processing to automatically retrieve and verify evidence for a given input claim. It is designed to assist fact-checkers and journalists in verifying claims made in news articles and other sources. ESOTERIC uses the FEVER dataset (Fact Extraction and VERification) as its source of information. It uses a multitude of different language models to perform various NLP tasks and even fine-tunes models to improve performance. It is wrapped in a Flask website that allows users to input a claim and view the evidence retrieved by the tool. ESOTERIC was my final year individual project for my degree in BSc Computer Science at Cardiff University and was awarded a grade of 84%.",
+            "skills": ["Machine Learning", "NLP", "Hugging Face", "Elasticsearch", "Python", "HTML", "CSS", "JavaScript"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/theobaur13/ESOTERIC"
+                },
+                {
+                    "class": "github",
+                    "text": "Website",
+                    "url": "https://github.com/theobaur13/ESOTERIC-website"
+                },
+                {
+                    "class": "document",
+                    "text": "Report",
+                    "url": "https://theobaur.co.uk/static/pdf/ESOTERIC-report.pdf"
+                }
+            ],
+            "image": "static/img/ESOTERIC.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Tool Sharing Website",
+            "description": "A Flask-based website designed to let users borrow tools from one another. This website uses Stripe to manage deposit payments and returns. Google Maps API tools are used to display an interactive map, calculate the distances for location searching, as well as geocoding location data. SQLite is used to manage the database. The website enables users to create an account, search for tools based on keywords or location, borrow tools by paying a deposit which is returned when the tool is returned, message other users using a simple chat system and report and open disputes with other users.",
+            "skills": ["Python", "HTML", "CSS", "JavaScript", "SQLite"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/theobaur13/tool-sharing-website"
+                },
+                {
+                    "class": "live",
+                    "text": "Demo",
+                    "url": "https://www.youtube.com/watch?v=IL8xZn2OB3A"
+                }
+            ],
+            "image": "static/img/tool-sharing-website-1.png"
+        },
+        {
+            "id": 3,
+            "name": "AI Playlist Name Generator",
+            "description": "A Flask-based website hosted using Vercel that enables users to upload their Apple Music playlists and generate playlist names using GPT-3.5. The Apple Music API is used to connect to the user's account and retrieve both their playlists and the songs inside each playlist. The OpenAI API <i>text-davinci-003 </i>model is used to generate names for the playlists based on the songs inside them.",
+            "skills": ["Python", "HTML", "CSS", "JavaScript"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/theobaur13/playlist-name-generator"
+                },
+                {
+                    "class": "live",
+                    "text": "Live Site",
+                    "url": "https://www.aiplaylistnamegen.com/"
+                }
+            ],
+            "image": "static/img/ai-playlist-name-generator-2.png"
+        },
+        {
+            "id": 4,
+            "name": "Personal Website",
+            "description": "A simple static website (this one) hosted on Netlify designed to showcase my current and upcoming projects . This website uses my own custom CSS stylesheet and JavaScript to display animations.",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/theobaur13/theobaur.co.uk"
+                },
+                {
+                    "class": "live",
+                    "text": "Live Site",
+                    "url": "https://www.theobaur.co.uk/"
+                }
+            ],
+            "image": null
+        },
+        {
+            "id": 5,
+            "name": "Rate My Student Home Cardiff",
+            "description": "A website designed to let students rate their student homes in Cardiff. This website uses Google Maps API tools to display an interactive map.",
+            "skills": ["Python", "HTML", "CSS", "JavaScript", "SQLite"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/GrLdev/Rate-My-Student-Home"
+                }
+            ],
+            "image": null
+        }
+    ],
+    "work_experience": [
+        {
+            "id": 1,
+            "company": "Global Aerospace",
+            "role": "Software Development Intern",
+            "description": "Worked on a project to streamline data received from partner banks and generate automated interactive reports. Visual Basic was used to create a secure user interface and normalize broker data while utilizing SQL for database management and Power BI for dynamic reporting.",
+            "skills" : ["Visual Basic", "SQL", "Power BI"],
+            "dates" : ["JUL 2023 - SEP 2023", "JAN 2024", "AUG 2024"]
+        }
+    ]
+}
