@@ -1,0 +1,28 @@
+{
+    "albums" : [
+        {
+            "id": 1,
+            "name": "Edinburgh 2024",
+            "album_id": "Edinburgh_2024",
+            "description": "In November 2024 I travelled up to Edinburgh to take part in an assessment center during my graduate job hunt. As the train journey up to Scotland was so long (around 7 hours), I decided to stay for a couple of nights to explore the city. I visited Dean Village, Edinburgh Castle, the Royal Mile, Dalton Hill, and had a wander around the city center."
+        },
+        {
+            "id": 2,
+            "name": "Lisbon 2024",
+            "album_id": "Lisbon_2024",
+            "description": "During the summer of 2024 I went on a family holiday to Portugal, staying a Setúbal. We travelled up to Lisbon a couple of times which is where most of these photos were taken."
+        },
+        {
+            "id": 3,
+            "name": "Abergavenny 2024",
+            "album_id": "Abergavenny_2024",
+            "description": "I took a short family trip from Cardiff to Abergavenny, where we hiked up the Sugar Loaf."
+        },
+        {
+            "id": 4,
+            "name": "Columbia 2023",
+            "album_id": "Columbia_2023",
+            "description": "A collection of photos taken in Edinburgh during the summer of 2024. This album includes photos of the city, the castle, and the surrounding countryside."
+        }
+    ]
+}

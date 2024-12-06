@@ -8,10 +8,15 @@
     --shadow: var(--primary-color);
 }
 .dark-theme {
-    --primary-color: #E5E5CB;
+    /* --primary-color: #E5E5CB;
     --primary-gradient: #D5CEA3;
     --secondary-color: #1A120B;
-    --secondary-gradient: #3C2A21;
+    --secondary-gradient: #3C2A21; */
+    --primary-color: #93B1A6;
+    --primary-gradient: #5C8374;
+    --secondary-color: #040D12;
+    --secondary-gradient: #183D3D;
+
     --skillbox-color: var(--secondary-gradient);
     --card-background: var(--secondary-gradient);
     --shadow: var(--secondary-color);
@@ -279,7 +284,7 @@ header {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.work-experience {
+.employment {
     padding-left: 18.5%;
     padding-right: 18.5%;
     padding-top: 30px;
@@ -288,7 +293,7 @@ header {
     color: var(--primary-color);
 }
 
-.work-experience-section {
+.employment-section {
     background-color: var(--card-background);
     display: flex;
 
@@ -297,16 +302,16 @@ header {
     border: 2px solid var(--primary-color);
 }
 
-.dark-theme .work-experience-section {
+.dark-theme .employment-section {
     border: none;
 }
 
-.work-experience-section:hover {
+.employment-section:hover {
     transform: scale(1.005);
     transition: 0.2s;
 }
 
-.work-experience-text {
+.employment-text {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -315,7 +320,7 @@ header {
     width: 85%;
 }
 
-.work-experience-dates {
+.employment-dates {
     width: 14%;
     text-align: right;
     padding-right: 20px;
@@ -430,6 +435,51 @@ footer a{
     text-decoration: none;
 }
 
+#album-thumbnail-header{
+    text-align: center;
+}
+
+.album-thumbnail-content{
+    padding-left: 18.5%;
+    padding-right: 18.5%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.album-thumbnail {
+    margin: 10px;
+    text-align: center;
+    background-color: var(--card-background);
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px var(--shadow);
+    border: 2px solid var(--primary-color);
+}
+
+.album-thumbnail a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.album-thumbnail:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.album-content {
+    text-align: center;
+    padding-left: 18.5%;
+    padding-right: 18.5%;
+    padding-bottom: 1px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.album-image img{
+    max-width: 83%;
+    /* max-width: 1000px; */
+}
+
 /* ##################################################### */
 
 @media all and (max-width: 1580px) {
@@ -466,9 +516,14 @@ footer a{
         padding-right: 180px; 
     }
 
-    .work-experience {
+    .employment {
         padding-left: 180px; 
         padding-right: 180px; 
+    }
+
+    .album-content{
+        padding-left: 180px; 
+        padding-right: 180px;
     }
 }
 
@@ -478,10 +533,20 @@ footer a{
         padding-right: 120px; 
     }
 
-    .work-experience {
+    .employment {
         padding-left: 120px; 
         padding-right: 120px; 
     }
+
+    .album-content{
+        padding-left: 120px; 
+        padding-right: 120px;
+    }
+
+    .album-image img{
+        max-width: 100%;
+    }
+    
 }
 
 @media all and (max-width: 1215px) {
@@ -540,17 +605,22 @@ footer a{
         height: 20px;
     }
 
-    .work-experience {
+    .employment {
         padding-left: 90px; 
         padding-right: 90px; 
     }
 
-    .work-experience p {
+    .employment p {
         font-size: 12px;
     }
 
-    .work-experience-dates {
+    .employment-dates {
         font-size: 14px;
+    }
+
+    .album-content{
+        padding-left: 90px;
+        padding-right: 90px;
     }
 }
 
@@ -574,9 +644,14 @@ footer a{
         height: 20px;
     }
 
-    .work-experience {
+    .employment {
         padding-left: 45px; 
         padding-right: 45px; 
+    }
+
+    .album-content{
+        padding-left: 45px;
+        padding-right: 45px;
     }
 }
 
@@ -638,19 +713,19 @@ footer a{
         display: block;
     }
 
-    .work-experience {
+    .employment {
         padding-bottom: 20px;
     }
 
-    .work-experience-section {
+    .employment-section {
         display: grid;
     }
 
-    .work-experience-text{
+    .employment-text{
         padding-bottom: 0px;
     }
 
-    .work-experience-dates {
+    .employment-dates {
         width: 100%;
         text-align: center;
     }
@@ -683,7 +758,7 @@ footer a{
         padding-bottom: 20px;
     }
 
-    .work-experience {
+    .employment {
         padding-left: 20px; 
         padding-right: 20px; 
     }
@@ -695,7 +770,7 @@ footer a{
         padding-bottom: 12px;
     }
 
-    .work-experience-text {
+    .employment-text {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 12px;
@@ -708,6 +783,11 @@ footer a{
 
     .navbar {
         padding-top: 32px;
+    }
+
+    .album-content{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -744,7 +824,7 @@ footer a{
         margin: 0 auto 60px;
     }
 
-    .work-experience {
+    .employment {
         max-width: 2160px;
         margin: 0 auto;
     }

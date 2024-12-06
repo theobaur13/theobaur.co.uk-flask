@@ -6,7 +6,8 @@
         <ul>
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
-            <li><a href="#work-experience">work experience</a></li>
+            <li><a href="#employment">employment</a></li>
+            <li><a href="{{ url_for('albums') }}">gallery</a></li>
         </ul>
         <div style="cursor: pointer;" id="dark-mode-toggle">🌒</div>
     </div>
@@ -162,13 +163,13 @@
     {% endfor %}
 </div>
 
-<div class="work-experience" id="work-experience">
+<div class="employment" id="employment">
     <h2>
-        >work experience
+        >employment
     </h2>
-    {% for experience in work_experience %}
-        <div class="work-experience-section scroll" data-rate="-1" scale-rate="0.6">
-            <div class="work-experience-text">
+    {% for experience in employment %}
+        <div class="employment-section scroll" data-rate="-1" scale-rate="0.6">
+            <div class="employment-text">
                 <h3>{{ experience.company }}</h3>
                 <h4>{{ experience.role }}</h4>
                 <p>
@@ -176,7 +177,7 @@
                 </p>
                 <h5>{{ experience.skills | join(' / ') }}</h5>
             </div>
-            <div class="work-experience-dates">
+            <div class="employment-dates">
                 <h5>
                 {% for date in experience.dates %}
                     {{ date }}<br>
@@ -199,7 +200,6 @@
         }
     });
 </script>
-<script src="static/js/typewriter.js"></script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script src="static/js/scrollbar.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

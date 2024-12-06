@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Theodor Hui Ren Baur</title>
-        <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         <link rel="stylesheet" href="static/css/github-calendar-responsive.css"/>
         <link rel="icon" href="static/img/theo-picture-3.ico" type="image/x-icon" sizes="16x16">
         <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');</style>
@@ -52,10 +52,25 @@
 
         <script>
             var toggle = document.getElementById("dark-mode-toggle");
+
+            // Check if the theme is saved in localStorage
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-theme");
+                toggle.innerHTML = "🌞";  // Set the toggle icon to the "sun"
+                // Invert icons if in dark mode
+                var icons = document.getElementsByClassName("invert");
+                for (var i = 0; i < icons.length; i++) {
+                    icons[i].style.filter = "invert(1)";
+                }
+            } else {
+                toggle.innerHTML = "🌒";  // Set the toggle icon to the "moon"
+            }
+
             toggle.onclick = function() {
                 document.body.classList.toggle("dark-theme");
                 if (document.body.classList.contains("dark-theme")) {
                     toggle.innerHTML = "🌞";
+                    localStorage.setItem("theme", "dark");  // Save the dark theme in localStorage
         
                     // invert all images with class="icon"
                     var icons = document.getElementsByClassName("invert");
@@ -64,6 +79,7 @@
                     }
                 } else {
                     toggle.innerHTML = "🌒";
+                    localStorage.setItem("theme", "light");  // Save the light theme in localStorage
         
                     // revert all images with class="icon"
                     var icons = document.getElementsByClassName("invert");
@@ -73,5 +89,6 @@
                 }
             }
         </script>
+        <script src="static/js/typewriter.js"></script>
     </body>
 </html>
