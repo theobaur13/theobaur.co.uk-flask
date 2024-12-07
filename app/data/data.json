@@ -65,18 +65,28 @@
         {
             "id": 4,
             "name": "Personal Website",
-            "description": "A simple static website (this one) hosted on Netlify designed to showcase my current and upcoming projects . This website uses my own custom CSS stylesheet and JavaScript to display animations.",
+            "description": "A Flask website (this one) hosted using Apache2 on a remote VPS designed to showcase my projects and photos. This website uses my own custom CSS stylesheet and JavaScript to display animations. The legacy version of this website was static and hosted using Netlify.",
             "skills": ["HTML", "CSS", "JavaScript"],
             "links": [
                 {
                     "class": "github",
                     "text": "Source",
-                    "url": "https://github.com/theobaur13/theobaur.co.uk"
+                    "url": "https://github.com/theobaur13/theobaur.co.uk-flask"
                 },
                 {
                     "class": "live",
                     "text": "Live Site",
                     "url": "https://www.theobaur.co.uk/"
+                },
+                {
+                    "class": "github",
+                    "text": "Legacy",
+                    "url": "https://github.com/theobaur13/theobaur.co.uk"
+                },
+                {
+                    "class": "live",
+                    "text": "Legacy",
+                    "url": "https://www.theobaur.co.uk/legacy"
                 }
             ],
             "image": null
