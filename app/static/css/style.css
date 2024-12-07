@@ -153,6 +153,11 @@ header {
 }
 /*  */
 .btn-scroll {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle; /* Align arrows vertically in the middle */
+
     border: none;
     text-decoration: none;
 }
@@ -475,9 +480,21 @@ footer a{
     color: var(--primary-color);
 }
 
+.album-header {
+    padding-bottom: 20px;
+}
+
 .album-image img{
     max-width: 83%;
     /* max-width: 1000px; */
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+    padding: 10px;
 }
 
 /* ##################################################### */

@@ -5,6 +5,7 @@ from flask import render_template, abort, request
 from PIL import Image, ExifTags
 from io import BytesIO
 from flask import send_file
+from math import ceil
 
 DATA_FILE_PATH = os.path.join(os.path.dirname(__file__), 'data', 'data.json')
 ALBUMS_FILE_PATH = os.path.join(os.path.dirname(__file__), 'data', 'albums.json')
@@ -63,7 +64,18 @@ def album(album_id):
     # Sort photos newest first as my best photos are normally later on
     photos.sort(reverse=True)
 
-    return render_template('album.html', album=album, photos=photos)
+    # Pagination settings
+    per_page = 20  # Number of photos per page
+    page = request.args.get('page', 1, type=int)  # Get the current page, default to 1
+    total_photos = len(photos)
+    total_pages = ceil(total_photos / per_page)
+
+    # Slice the photos for the current page
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_photos = photos[start:end]
+
+    return render_template('album.html', album=album, photos=paginated_photos, page=page, total_pages=total_pages)
 
 @app.route('/albums/<album_id>/image/<filename>')
 def dynamic_image(album_id, filename):
@@ -108,6 +120,6 @@ def resize_image(image_path, max_width, max_height):
         # Resize the image
         img.thumbnail((max_width, max_height))      # Resize the image to fit within the dimensions
         img_io = BytesIO()
-        img.save(img_io, 'JPEG', quality=85)        # Save the image into memory (in JPEG format)
+        img.save(img_io, 'JPEG', quality=95)        # Save the image into memory (in JPEG format)
         img_io.seek(0)                              # Move the pointer to the start of the BytesIO object
         return img_io

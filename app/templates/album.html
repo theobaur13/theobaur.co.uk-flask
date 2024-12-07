@@ -13,7 +13,31 @@
     <div class="album-header">
         <h1>{{ album.name }}</h1>
         <p>{{ album.description }}</p>
+        <div class="pagination">
+            {% if page > 1 %}
+                <a href="{{ url_for('album', album_id=album.album_id, page=page-1) }}">
+                    <div class="btn-scroll" width="24" height="24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left invert" id="btn-scroll-left">
+                            <polyline points="15 18 9 12 15 6"/>
+                        </svg>
+                    </div>
+                </a>
+            {% endif %}
+        
+            <span>Page {{ page }} of {{ total_pages }}</span>
+        
+            {% if page < total_pages %}
+                <a href="{{ url_for('album', album_id=album.album_id, page=page+1) }}">
+                    <div class="btn-scroll" width="24" height="24">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right invert" id="btn-scroll-right">
+                            <polyline points="9 18 15 12 9 6"/>
+                        </svg>
+                    </div>
+                </a>
+            {% endif %}
+        </div>
     </div>
+
     <div class="album">
         {% for photo in photos %}
             <div class="album-image">
@@ -25,6 +49,30 @@
         {% else %}
             <p>No photos available for this album.</p>
         {% endfor %}
+    </div>
+
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="{{ url_for('album', album_id=album.album_id, page=page-1) }}">
+                <div class="btn-scroll" width="24" height="24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left invert" id="btn-scroll-left">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </div>
+            </a>
+        {% endif %}
+    
+        <span>Page {{ page }} of {{ total_pages }}</span>
+    
+        {% if page < total_pages %}
+            <a href="{{ url_for('album', album_id=album.album_id, page=page+1) }}">
+                <div class="btn-scroll" width="24" height="24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right invert" id="btn-scroll-right">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </div>
+            </a>
+        {% endif %}
     </div>
 </div>
 
