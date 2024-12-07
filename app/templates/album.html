@@ -21,7 +21,8 @@
         {% for photo in photos %}
             <div class="album-image">
                 <a href="{{ url_for('static', filename=photo) }}" target="_blank">
-                    <img src="{{ url_for('static', filename=photo) }}" alt="{{ photo }}" loading="lazy">
+                    <!-- <img src="{{ url_for('static', filename=photo) }}" alt="{{ photo }}" loading="lazy"> -->
+                    <img src="{{ url_for('dynamic_image', album_id=album.album_id, filename=photo.split('/')[-1]) }}?width=1920&height=1080" alt="{{ photo }}" loading="lazy">
                 </a>
             </div>
         {% else %}

@@ -1,7 +1,10 @@
 import os
 import json
 from app import app
-from flask import render_template, abort
+from flask import render_template, abort, request
+from PIL import Image
+from io import BytesIO
+from flask import send_file
 
 DATA_FILE_PATH = os.path.join(os.path.dirname(__file__), 'data', 'data.json')
 ALBUMS_FILE_PATH = os.path.join(os.path.dirname(__file__), 'data', 'albums.json')
@@ -61,3 +64,31 @@ def album(album_id):
     photos.sort(reverse=True)
 
     return render_template('album.html', album=album, photos=photos)
+
+@app.route('/albums/<album_id>/image/<filename>')
+def dynamic_image(album_id, filename):
+    # Construct the path to the image
+    photo_directory = os.path.join(ALBUMS_PHOTO_PATH, album_id)
+    image_path = os.path.join(photo_directory, filename)
+
+    # Check if the image exists, if not return a 404
+    if not os.path.exists(image_path):
+        return abort(404)
+
+    # Get the query parameters for width and height (defaulting to 800x800 if not provided)
+    width = request.args.get('width', default=800, type=int)
+    height = request.args.get('height', default=800, type=int)
+
+    # Resize the image
+    img_io = resize_image(image_path, width, height)
+
+    # Return the resized image as a response
+    return send_file(img_io, mimetype='image/jpeg')
+
+def resize_image(image_path, max_width, max_height):
+    with Image.open(image_path) as img:
+        img.thumbnail((max_width, max_height))      # Resize the image to fit within the dimensions
+        img_io = BytesIO()
+        img.save(img_io, 'JPEG', quality=85)        # Save the image into memory (in JPEG format)
+        img_io.seek(0)                              # Move the pointer to the start of the BytesIO object
+        return img_io
