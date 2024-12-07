@@ -2,7 +2,7 @@ import os
 import json
 from app import app
 from flask import render_template, abort, request
-from PIL import Image
+from PIL import Image, ExifTags
 from io import BytesIO
 from flask import send_file
 
@@ -87,6 +87,25 @@ def dynamic_image(album_id, filename):
 
 def resize_image(image_path, max_width, max_height):
     with Image.open(image_path) as img:
+        # Handle EXIF orientation (rotation)
+        try:
+            for orientation in ExifTags.TAGS.keys():
+                if ExifTags.TAGS[orientation] == 'Orientation':
+                    break
+            exif = img._getexif()
+            if exif is not None:
+                orientation = exif.get(orientation)
+                if orientation == 3:
+                    img = img.rotate(180, expand=True)
+                elif orientation == 6:
+                    img = img.rotate(270, expand=True)
+                elif orientation == 8:
+                    img = img.rotate(90, expand=True)
+        except (AttributeError, KeyError, IndexError):
+            # In case the image has no EXIF data or we can't access it, just skip
+            pass
+
+        # Resize the image
         img.thumbnail((max_width, max_height))      # Resize the image to fit within the dimensions
         img_io = BytesIO()
         img.save(img_io, 'JPEG', quality=85)        # Save the image into memory (in JPEG format)
