@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Theodor Hui Ren Baur</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-        <link rel="stylesheet" href="static/css/github-calendar-responsive.css"/>
-        <link rel="icon" href="static/img/theo-picture-3.ico" type="image/x-icon" sizes="16x16">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/github-calendar-responsive.css') }}"/>
+        <link rel="icon" href="{{ url_for('static', filename='img/theo-picture-3.ico') }}" type="image/x-icon" sizes="16x16">
         <style>@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');</style>
         <style>
             @font-face {
@@ -38,13 +38,13 @@
             <div class="center-footer">
                 <p>
                     <a class="icon" href="https://github.com/theobaur13">
-                        <img src="static/img/github-mark.png" alt="Github Logo" width="16" height="16" class="invert"/>
+                        <img src="{{ url_for('static', filename='img/github-mark.png') }}" alt="Github Logo" width="16" height="16" class="invert"/>
                     </a>
                     <a class="icon" href="https://www.linkedin.com/in/theobaur/">
-                        <img src="static/img/LI-In-Bug.png" alt="LinkedIn Logo" width="16" height="16" class="invert"/>
+                        <img src="{{ url_for('static', filename='img/LI-In-Bug.png') }}" alt="LinkedIn Logo" width="16" height="16" class="invert"/>
                     </a>
                     <a class="icon" href="https://www.flickr.com/photos/theobaur/albums">
-                        <img src="static/img/flickr.png" alt="Flickr Logo" width="16" height="16" class="invert"/>
+                        <img src="{{ url_for('static', filename='img/flickr.png') }}" alt="Flickr Logo" width="16" height="16" class="invert"/>
                     </a> 
                 </p>
             </div>
