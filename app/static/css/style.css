@@ -732,6 +732,11 @@ footer a{
 }
 
 @media all and (max-width: 560px) {
+    .navbar ul li{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
     .socials {
         padding-top: 15px;
         padding-bottom: 15px;
@@ -792,10 +797,10 @@ footer a{
 }
 
 @media all and (max-width: 400px){
-    .navbar ul li{
+    /* .navbar ul li{
         padding-left: 15px;
         padding-right: 15px;
-    }
+    } */
 }
 
 @media all and (min-width: 2160px){
