@@ -3,6 +3,10 @@ import sys
 import logging
 from pathlib import Path
 
+# Activate virtual environment
+activate_this = '/var/www/flask_app/venv/bin/activate_this.py'
+exec(open(activate_this).read(), dict(__file__=activate_this))
+
 # Define the path to the Flask app
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
