@@ -74,11 +74,6 @@
                     "url": "https://github.com/theobaur13/theobaur.co.uk-flask"
                 },
                 {
-                    "class": "live",
-                    "text": "Live Site",
-                    "url": "https://www.theobaur.co.uk/"
-                },
-                {
                     "class": "github",
                     "text": "Legacy",
                     "url": "https://github.com/theobaur13/theobaur.co.uk"
@@ -86,7 +81,7 @@
                 {
                     "class": "live",
                     "text": "Legacy",
-                    "url": "https://www.theobaur.co.uk/legacy"
+                    "url": "https://theobaur-legacy.netlify.app/"
                 }
             ],
             "image": null
