@@ -25,7 +25,7 @@ def index():
 @app.route('/albums')
 def albums():
     # Load the data from the JSON file
-    with open (ALBUMS_FILE_PATH, 'r', 'utf-8') as json_file:
+    with open (ALBUMS_FILE_PATH, 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
 
     albums = data['albums']
@@ -35,7 +35,7 @@ def albums():
 @app.route('/albums/<album_id>')
 def album(album_id):
     # Load the data from the JSON file
-    with open (ALBUMS_FILE_PATH, 'r', 'utf-8') as json_file:
+    with open (ALBUMS_FILE_PATH, 'r', encoding='utf-8') as json_file:
         data = json.load(json_file)
 
     # Find the album with the matching album_id
