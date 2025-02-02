@@ -61,12 +61,12 @@ def album(album_id):
             # Construct the full file path for the image
             photo_path = os.path.join(f'albums/{album_id}', file).replace('\\', '/')
             aspect_ratio = get_aspect_ratio(os.path.join(photo_directory, file))
-            photos.append({'path': photo_path, 'aspect_ratio': aspect_ratio, 'pointer': pointer})
+            photos.append({'path': photo_path, 'aspect_ratio': aspect_ratio, 'name': file})
             pointer += 1
     
     # Sort photos newest first as my best photos are normally later on
     # photos.sort(reverse=True)
-    photos.sort(key=lambda x: x['pointer'], reverse=True)
+    photos.sort(key=lambda x: x['name'], reverse=True)
 
     # Pagination settings
     per_page = 20  # Number of photos per page
