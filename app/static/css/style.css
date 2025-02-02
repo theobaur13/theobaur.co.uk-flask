@@ -326,11 +326,6 @@ header {
     border: none;
 }
 
-.employment-section:hover {
-    transform: scale(1.005);
-    transition: 0.2s;
-}
-
 .employment-text {
     padding-left: 30px;
     padding-right: 30px;
