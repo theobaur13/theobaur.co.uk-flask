@@ -99,13 +99,29 @@ ul li a:hover::after{
 }
 
 header {
+    display: flex;
+    width: 100%;
     padding-left: 0px;
     padding-right: 0px; 
-    display: inline-block;
+}
+
+#profile-picture-wrapper {
+    width: fit-content;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.header-img{
+    width: 80%;
+    border-radius: 3px;
+    opacity: 0.9;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .header-text {
-    float: right;
     width: 60%;
     text-align: justify;
     text-align-last: right;
@@ -114,15 +130,6 @@ header {
 .header-text h1 {
     font-size: 44px;
     font-weight: 600;
-}
-
-.header-img{
-    margin-top: 29.5px;
-    width: 30%;
-    float: left;
-    border-radius: 3px;
-    opacity: 0.9;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .skill-bar{
@@ -610,11 +617,6 @@ footer a{
 }
 
 @media all and (max-width: 1215px) {
-
-    .header-text {
-        width: 65%;
-    }
-
     .header-text h1 {
         font-size: 30px;
     }
