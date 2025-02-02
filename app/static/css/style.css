@@ -746,6 +746,7 @@ footer a{
 
     .header-text {
         text-align-last: center;
+        width: 80%;
     }
 
     .header-text h4{
@@ -760,6 +761,7 @@ footer a{
     .header-img {
         width: 150px;
         height: 150px;
+        margin-top: 29.5px;
     }
 
     .socials-link-wrapper {
@@ -852,10 +854,14 @@ footer a{
         padding-bottom: 12px;
     }
 
-    .header-text {
+    .header-text h1 {
         text-align: center;
-        text-align: justify;
-        text-align-last: center;
+    }
+
+    .header-text p {
+        /* text-align: justify;
+        text-align-last: center; */
+        text-align: center;
     }
 
     .navbar {
