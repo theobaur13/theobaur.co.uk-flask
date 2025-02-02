@@ -54,15 +54,19 @@ def album(album_id):
 
     # List all the images in that directory
     photos = []
+    pointer = 0
     for file in os.listdir(photo_directory):
         # Check if the file has an image extension
         if file.endswith(('.jpg', '.png', '.jpeg', '.JPG')):
             # Construct the full file path for the image
             photo_path = os.path.join(f'albums/{album_id}', file).replace('\\', '/')
-            photos.append(photo_path)
+            aspect_ratio = get_aspect_ratio(os.path.join(photo_directory, file))
+            photos.append({'path': photo_path, 'aspect_ratio': aspect_ratio, 'pointer': pointer})
+            pointer += 1
     
     # Sort photos newest first as my best photos are normally later on
-    photos.sort(reverse=True)
+    # photos.sort(reverse=True)
+    photos.sort(key=lambda x: x['pointer'], reverse=True)
 
     # Pagination settings
     per_page = 20  # Number of photos per page
@@ -120,6 +124,30 @@ def resize_image(image_path, max_width, max_height):
         # Resize the image
         img.thumbnail((max_width, max_height))      # Resize the image to fit within the dimensions
         img_io = BytesIO()
-        img.save(img_io, 'JPEG', quality=95)        # Save the image into memory (in JPEG format)
+        img.save(img_io, 'JPEG', quality=80)        # Save the image into memory (in JPEG format)
         img_io.seek(0)                              # Move the pointer to the start of the BytesIO object
         return img_io
+    
+def get_aspect_ratio(image_path):
+    # Open the image
+    img = Image.open(image_path)
+
+    # Fetch the width and height 
+    width, height = img.size
+
+    # Attempt to read EXIF data for orientation
+    try:
+        exif_data = img._getexif()  # Get EXIF data
+        if exif_data:
+            # Extract orientation tag value (only check 'Orientation' once)
+            orientation = next((value for tag, value in exif_data.items() if ExifTags.TAGS.get(tag) == 'Orientation'), None)
+            
+            # If the orientation requires flipping or rotating, adjust accordingly
+            if orientation in {3, 6, 8}:  # Check if it's 180° flip, 90° rotation, or 270° rotation
+                return height / width  # The aspect ratio remains unchanged after rotation
+    except (AttributeError, KeyError, IndexError):
+        pass
+
+    # Get the size (width, height)
+    width, height = img.size
+    return width / height
