@@ -107,6 +107,8 @@ header {
 .header-text {
     float: right;
     width: 60%;
+    text-align: justify;
+    text-align-last: right;
 }
 
 .header-text h1 {
@@ -249,6 +251,11 @@ header {
     color: var(--primary-color);
 }
 
+.projects p {
+    text-align: justify;
+    text-justify: auto;
+}
+
 .projects hr {
     border: 1px solid var(--primary-color);
     margin-top: 0px;
@@ -299,6 +306,11 @@ header {
     padding-bottom: 70px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.employment p {
+    text-align: justify;
+    text-justify: auto;
 }
 
 .employment-section {
@@ -481,6 +493,12 @@ footer a{
     padding-bottom: 1px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
+
+.album-header p {
+    text-align: justify;
+    
+    text-align-last: center;
 }
 
 .album {
@@ -729,6 +747,10 @@ footer a{
         padding-bottom: 20px;
     }
 
+    .header-text {
+        text-align-last: center;
+    }
+
     .top {
         padding-left: 0px; 
         padding-right: 0px; 
@@ -831,6 +853,8 @@ footer a{
 
     .header-text {
         text-align: center;
+        text-align: justify;
+        text-align-last: center;
     }
 
     .navbar {
