@@ -1,6 +1,25 @@
 {
     "projects": [
         {
+            "id": 0,
+            "name": "Mango-DMC-MLP (Mango Dry Matter Content Multilayer Perceptron)",
+            "description": "A neural network model that predicts the dry matter content of mangoes based off of near-infrared spectroscopy absorbance data. This model was developed without the assistance of ML libraries and implemented entirely using NumPy with linear algebra to gain a better understanding of basic machine learning concepts such as bias, variance, and backpropagation. It consists of 3 hidden layers with 200, 50, and 10 neurons respectively, each using the ReLU activation function. The model was trained on a dataset of 3000 Near Infrared Spectroscopy (NIR) absorbance data samples and tested on a separate dataset of 1000 samples using 281 features.",
+            "skills": ["Machine Learning", "Python", "NumPy", "Linear Algebra", "Backpropagation"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/theobaur13/Mango-DMC-MLP"
+                },
+                {
+                    "class": "live",
+                    "text": "Dataset",
+                    "url": "https://data.mendeley.com/datasets/46htwnp833/1"
+                }
+            ],
+            "image": null
+        },
+        {
             "id": 1,
             "name": "ESOTERIC - Elasticsearch Semantic Optimised Text Extraction Retrieval from Information Corpus",
             "description": "ESOTERIC is a tool that uses natural language processing to automatically retrieve and verify evidence for a given input claim. It is designed to assist fact-checkers and journalists in verifying claims made in news articles and other sources. ESOTERIC uses the FEVER dataset (Fact Extraction and VERification) as its source of information. It uses a multitude of different language models to perform various NLP tasks and even fine-tunes models to improve performance. It is wrapped in a Flask website that allows users to input a claim and view the evidence retrieved by the tool. ESOTERIC was my final year individual project for my degree in BSc Computer Science at Cardiff University and was awarded a grade of 84%.",
