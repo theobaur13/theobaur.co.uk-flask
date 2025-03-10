@@ -46,7 +46,7 @@
         {
             "id": 2,
             "name": "Tool Sharing Website",
-            "description": "A Flask-based website designed to let users borrow tools from one another. This website uses Stripe to manage deposit payments and returns. Google Maps API tools are used to display an interactive map, calculate the distances for location searching, as well as geocoding location data. SQLite is used to manage the database. The website enables users to create an account, search for tools based on keywords or location, borrow tools by paying a deposit which is returned when the tool is returned, message other users using a simple chat system and report and open disputes with other users.",
+            "description": "A Flask-based website designed to let users borrow tools from one another. This website uses Stripe to manage deposit payments and returns. Google Maps API tools are used to display an interactive map, calculate the distances for location searching, as well as geocoding location data. SQLite is used to manage the database. The website enables users to create an account, search for tools based on keywords or location, borrow tools by paying a deposit which is returned when the tool is returned, message other users using a simple chat system and report, and open disputes with other users.",
             "skills": ["Python", "HTML", "CSS", "JavaScript", "SQLite"],
             "links": [
                 {
@@ -108,7 +108,7 @@
         {
             "id": 5,
             "name": "Rate My Student Home Cardiff",
-            "description": "A website designed to let students rate their student homes in Cardiff. This website uses Google Maps API tools to display an interactive map.",
+            "description": "A website designed to let Cardiff students rate their student homes. This website uses Google Maps API tools to display an interactive map.",
             "skills": ["Python", "HTML", "CSS", "JavaScript", "SQLite"],
             "links": [
                 {
@@ -125,9 +125,9 @@
             "id": 1,
             "company": "Global Aerospace",
             "role": "Software Development Intern",
-            "description": "Worked on a project to streamline data received from partner banks and generate automated interactive reports. Visual Basic was used to create a secure user interface and normalize broker data while utilizing SQL for database management and Power BI for dynamic reporting.",
+            "description": "Created an interface to input and normalize unformatted insurance policy data sent by banks to store in an internal database using Visual Basic and SQL. Created an automated interactive data analysis report system using PowerBI, integrated with the internal database via SQL, allowing for data projections, filtering, and insurance policy comparisons.",
             "skills" : ["Visual Basic", "SQL", "Power BI"],
-            "dates" : ["JUL 2023 - SEP 2023", "JAN 2024", "AUG 2024"]
+            "dates" : ["SUMMER 2024", "WINTER 2023/24", "SUMMER 2023"]
         }
     ]
 }
