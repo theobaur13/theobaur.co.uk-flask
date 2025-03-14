@@ -1,21 +1,17 @@
 @media all and (max-width: 1580px) {
-    .header-text h1 {
+    /* .header-text h1 {
         font-size: 40px;
     }
 
     .project-text h1 {
         font-size: 28px;
-    }
-
-    .project-text p {
-        font-size: 14px;
-    }
+    } */
 }
 
 @media all and (max-width: 1420px) {
-    .header-text h1 {
+    /* .header-text h1 {
         font-size: 35px;
-    }
+    } */
 
     .header-img {
         width: 200px;
@@ -70,9 +66,9 @@
         font-size: 30px;
     }
 
-    .header-text p {
+    /* .header-text p {
         font-size: 14px;
-    }
+    } */
 }
 
 @media all and (max-width: 1165px) {
@@ -100,12 +96,12 @@
 
     .project-text h5 {
         margin-top: 5px;
-        margin-bottom: 7px;
+        margin-bottom: 9px;
     }
 
-    .project-text p {
+    /* .project-text p {
         font-size: 12px;
-    }
+    } */
 
     .projects img {
         width: 30%;
@@ -121,13 +117,13 @@
         padding-right: 90px; 
     }
 
-    .employment p {
+    /* .employment p {
         font-size: 12px;
-    }
+    } */
 
-    .employment-dates {
+    /* .employment-dates {
         font-size: 14px;
-    }
+    } */
 
     .album-content{
         padding-left: 90px;
@@ -173,8 +169,7 @@
     }
 
     .projects img {
-        width: 200px;
-        height: 200px;
+        display: none;
     }
 
     .project-link-wrapper img {
@@ -226,10 +221,6 @@
         padding-bottom: 20px;
     }
 
-    .projects img {
-        display: none;
-    }
-
     .project-link-wrapper img {
         display: block;
     }
@@ -249,6 +240,13 @@
     .employment-dates {
         width: 100%;
         text-align: center;
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+
+    .employment-dates h5 {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 
@@ -256,6 +254,10 @@
     .navbar ul li{
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .navbar ul li a{
+        font-size: 14px;
     }
 
     .socials {
@@ -320,6 +322,12 @@
     .album-content{
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .project-link-wrapper a {
+        font-size: 15px;
     }
 }
 

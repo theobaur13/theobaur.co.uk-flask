@@ -4,6 +4,10 @@
     background: linear-gradient(170deg, var(--secondary-color) 0%, var(--secondary-color) 0%,  var(--secondary-gradient) 80%);
 }
 
+.other-gradient {
+    background: linear-gradient(170deg, var(--secondary-color) 0%, var(--secondary-color) 70%,  var(--secondary-gradient) 100%);
+}
+
 .top {
     padding-left: 25.8%; 
     padding-right: 25.8%; 
@@ -89,7 +93,7 @@ header {
 }
 
 .header-text h1 {
-    font-size: 44px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -215,7 +219,7 @@ header {
     padding-right: 18.5%;
     padding-top: 50px;
     padding-bottom: 1px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     color: var(--primary-color);
 }
 
@@ -225,11 +229,9 @@ header {
 }
 
 .projects hr {
-    border: 1px solid var(--primary-color);
     margin-top: 0px;
     margin-bottom: 0px;
     width: 95%;
-    opacity: 0.5;
 }
 
 .project {
@@ -259,6 +261,10 @@ header {
     flex: 1;
 }
 
+.project-text h1{
+    font-size: 30px;
+}
+
 .project img {
     width: 39.3%;
     object-fit: cover;
@@ -270,8 +276,7 @@ header {
 .employment {
     padding-left: 18.5%;
     padding-right: 18.5%;
-    padding-top: 30px;
-    padding-bottom: 70px;
+    padding-top: 50px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
@@ -355,6 +360,8 @@ footer a{
 
 .project-links {
     display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .project-link-wrapper {

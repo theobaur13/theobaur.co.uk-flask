@@ -2,146 +2,147 @@
 {% block content %}
 
 <div class="gradient">
-    <div class="navbar">
-        <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#employment">employment</a></li>
-            <li><a href="{{ url_for('albums') }}">gallery</a></li>
-        </ul>
-        <div style="cursor: pointer;" id="dark-mode-toggle">🌒</div>
-    </div>
-
-    <div class="top" id="about">
-            <header>
-                <div id="profile-picture-wrapper">
-                    <img src="static/img/theo-picture-3.JPG" alt="Profile Picture" class="header-img">
-                </div>
-
-                <div class="header-text">
-                    <h1 id=">name">
-                        <!-- Theodor Hui Ren Baur -->
-                    </h1>
-                    <hr>
-                    <h4>
-                        Cardiff University - <i>theo@theobaur.co.uk</i>
-                        <br>
-                        Artificial Intelligence (MSc)
-                        <br>
-                        Computer Science (BSc)
-                        <br>
-                        
-                    </h4>
-                    <p>
-                        I am a recent graduate from Cardiff University with a first-class degree in BSc Computer Science, currently pursuing a Master's Degree in MSc Artificial Intelligence. My interests lie in artificial intelligence, machine learning, and web development. I am open to employment opportunities in related fields.
-                    </p>
-                    <hr>
-                </div>      
-            </header>
-
-            <div class="skills-section">
-                <h5 style="text-align: center;">SKILLS</h5>
-
-                <div class="skill-bar">
-                    <div class="btn-scroll" width="24" height="24">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left invert" id="btn-scroll-left">
-                            <polyline points="15 18 9 12 15 6"/>
-                        </svg>
-                    </div>
-
-                    <div class="skills">
-                        <div class="skillbox">
-                            <img src="static/img/python-logo-only.png" alt="Python" width="40" height="40"/>
-                            <p>Python</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/java.png" alt="Java" width="40" height="40"/>
-                            <p>Java</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/vb.png" alt="Visual Basic" width="40" height="40"/>
-                            <p style="font-size: 11px">Visual Basic</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/javascript.png" alt="JavaScript" width="40" height="40"/>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/git.png" alt="Git" width="40" height="40"/>
-                            <p>Git</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/matlab.png" alt="MATLAB" width="40" height="40"/>
-                            <p>MATLAB</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/sql.png" alt="SQL" width="40" height="40" class="invert"/>
-                            <p>SQL</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/html.png" alt="HTML" width="40" height="40"/>
-                            <p>HTML</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/css.png" alt="CSS" width="40" height="40"/>
-                            <p>CSS</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/flask.png" alt="Flask" width="40" height="40" class="invert"/>
-                            <p>Flask</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/numpy.png" alt="Numpy" width="40" height="40"/>
-                            <p>Numpy</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/matplotlib.png" alt="Matplotlib" width="40" height="40"/>
-                            <p>Matplotlib</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/pandas.png" alt="Pandas" width="40" height="40"/>
-                            <p>Pandas</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/powerbi.png" alt="PowerBI" width="40" height="40"/>
-                            <p>PowerBI</p>
-                        </div>
-                        <div class="skillbox">
-                            <img src="static/img/huggingface.png" alt="Hugging Face" width="40" height="40"/>
-                            <p>HF</p>
-                        </div>
-                    </div>
-
-                    <div class="btn-scroll" width="24" height="24">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right invert" id="btn-scroll-right">
-                            <polyline points="9 18 15 12 9 6"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contributions-section">
-                <h5 style="text-align: center;">GITHUB CONTRIBUTIONS</h5>
-
-                <div class="calendar"></div>
-            </div>
-
-            <div class="socials">
-                <div class="socials-link-wrapper" style="background: radial-gradient(at 0% 10%, #FFFFFF 0%, #FFD1BF 80%, #CEB3EF 100%);">
-                    <a href="https://theobaur.co.uk/static/pdf/CV.pdf" class="socials-link" style="color: #E24329; font-weight:bold;">CV</a>
-                </div>
-
-                <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #c8d8c9 80%, #a6ddaf 100%);">
-                    <a href="https://github.com/theobaur13" class="socials-link" style="color: #272727; font-weight:bold;">GitHub</a>
-                </div>
-
-                <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #cccdcf 80%, #b9bbbd 100%);">
-                    <a href="https://www.linkedin.com/in/theobaur/" class="socials-link" style="color: #0077b5;font-weight:bold; ">LinkedIn</a>
-                </div>
-            </div>
-    </div>
+<div class="navbar">
+    <ul>
+        <li><a href="#about"><b>about</b></a></li>
+        <li><a href="#projects"><b>projects</b></a></li>
+        <li><a href="#employment"><b>employment</b></a></li>
+        <li><a href="{{ url_for('albums') }}"><b>gallery</b></a></li>
+    </ul>
+    <div style="cursor: pointer;" id="dark-mode-toggle">🌒</div>
 </div>
 
+<div class="top" id="about">
+        <header>
+            <div id="profile-picture-wrapper">
+                <img src="static/img/theo-picture-3.JPG" alt="Profile Picture" class="header-img">
+            </div>
+
+            <div class="header-text">
+                <h1 id=">name">
+                    <!-- Theodor Hui Ren Baur -->
+                </h1>
+                <hr>
+                <p>
+                    Cardiff University - <i>theo@theobaur.co.uk</i>
+                    <br>
+                    Artificial Intelligence (MSc)
+                    <br>
+                    Computer Science (BSc)
+                    <br>
+                    
+                </p>
+                <p>
+                    I am a recent graduate from Cardiff University with a first-class degree in BSc Computer Science, currently pursuing a Master's Degree in MSc Artificial Intelligence. My interests lie in artificial intelligence, machine learning, and web development. I am open to employment opportunities in related fields.
+                </p>
+                <hr>
+            </div>      
+        </header>
+
+        <div class="skills-section">
+            <h5 style="text-align: center;">SKILLS</h5>
+
+            <div class="skill-bar">
+                <div class="btn-scroll" width="24" height="24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left invert" id="btn-scroll-left">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </div>
+
+                <div class="skills">
+                    <div class="skillbox">
+                        <img src="static/img/python-logo-only.png" alt="Python" width="40" height="40"/>
+                        <p>Python</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/java.png" alt="Java" width="40" height="40"/>
+                        <p>Java</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/vb.png" alt="Visual Basic" width="40" height="40"/>
+                        <p style="font-size: 11px">Visual Basic</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/javascript.png" alt="JavaScript" width="40" height="40"/>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/git.png" alt="Git" width="40" height="40"/>
+                        <p>Git</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/matlab.png" alt="MATLAB" width="40" height="40"/>
+                        <p>MATLAB</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/sql.png" alt="SQL" width="40" height="40" class="invert"/>
+                        <p>SQL</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/html.png" alt="HTML" width="40" height="40"/>
+                        <p>HTML</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/css.png" alt="CSS" width="40" height="40"/>
+                        <p>CSS</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/flask.png" alt="Flask" width="40" height="40" class="invert"/>
+                        <p>Flask</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/numpy.png" alt="Numpy" width="40" height="40"/>
+                        <p>Numpy</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/matplotlib.png" alt="Matplotlib" width="40" height="40"/>
+                        <p>Matplotlib</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/pandas.png" alt="Pandas" width="40" height="40"/>
+                        <p>Pandas</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/powerbi.png" alt="PowerBI" width="40" height="40"/>
+                        <p>PowerBI</p>
+                    </div>
+                    <div class="skillbox">
+                        <img src="static/img/huggingface.png" alt="Hugging Face" width="40" height="40"/>
+                        <p>HF</p>
+                    </div>
+                </div>
+
+                <div class="btn-scroll" width="24" height="24">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right invert" id="btn-scroll-right">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="contributions-section">
+            <h5 style="text-align: center;">GITHUB CONTRIBUTIONS</h5>
+
+            <div class="calendar"></div>
+        </div>
+
+        <div class="socials">
+            <div class="socials-link-wrapper" style="background: radial-gradient(at 0% 10%, #FFFFFF 0%, #FFD1BF 80%, #CEB3EF 100%);">
+                <a href="https://theobaur.co.uk/static/pdf/CV.pdf" class="socials-link" style="color: #E24329; font-weight:bold;">CV</a>
+            </div>
+
+            <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #c8d8c9 80%, #a6ddaf 100%);">
+                <a href="https://github.com/theobaur13" class="socials-link" style="color: #272727; font-weight:bold;">GitHub</a>
+            </div>
+
+            <div class="socials-link-wrapper" style="background-color: #FFFFFF; background: radial-gradient(at 0% 10%, #FFFFFF 0%, #cccdcf 80%, #b9bbbd 100%);">
+                <a href="https://www.linkedin.com/in/theobaur/" class="socials-link" style="color: #0077b5;font-weight:bold; ">LinkedIn</a>
+            </div>
+        </div>
+</div>
+</div>
+
+<div class="other-gradient">
 <div class="projects" id="projects">
     <h2>
         >projects
@@ -179,6 +180,7 @@
         </div>
     {% endfor %}
 </div>
+</div>
 
 <div class="employment" id="employment">
     <h2>
@@ -205,6 +207,7 @@
     {% endfor %}
 </div>
 
+<script src="static/js/scrollbar.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         // Target the specific element with the long class list
@@ -218,7 +221,6 @@
     });
 </script>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script src="static/js/scrollbar.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
     GitHubCalendar(".calendar", "theobaur13", { responsive: true });

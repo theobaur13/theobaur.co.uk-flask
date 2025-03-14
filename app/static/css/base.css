@@ -24,14 +24,18 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Merriweather Sans', sans-serif;
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    font-family: 'Latin Modern Roman', 'Merriweather Sans', sans-serif;
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
 p {
-    font-size: 15px;
-    opacity: 1;
+    /* font-size: 15px; */
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    /* opacity: 1; */
 }
 
 
@@ -42,18 +46,17 @@ h2 {
 }
 
 h3 {
-    padding-top: 0px; 
-    font-weight: 600;
+    padding-top: 0px;
 }
 
 h4 {
     padding-top: 0px;
-    font-weight: 400;   
 }
 
 hr {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 100%;
-    opacity: 0.6;
+    border: none;
+    border-top: 1px solid var(--primary-color);
 }
