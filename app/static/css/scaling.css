@@ -1,0 +1,361 @@
+@media all and (max-width: 1580px) {
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .project-text h1 {
+        font-size: 28px;
+    }
+
+    .project-text p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1420px) {
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .header-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .top {
+        padding-left: 270px; 
+        padding-right: 270px; 
+    }
+
+    .projects {
+        padding-left: 180px; 
+        padding-right: 180px; 
+    }
+
+    .employment {
+        padding-left: 180px; 
+        padding-right: 180px; 
+    }
+
+    .album-content{
+        padding-left: 180px; 
+        padding-right: 180px;
+    }
+}
+
+@media all and (max-width: 1360px) {
+    .projects {
+        padding-left: 120px; 
+        padding-right: 120px; 
+    }
+
+    .employment {
+        padding-left: 120px; 
+        padding-right: 120px; 
+    }
+
+    .album-content{
+        padding-left: 120px; 
+        padding-right: 120px;
+    }
+
+    .album-image {
+        max-width: 100%;
+    }
+    
+}
+
+@media all and (max-width: 1215px) {
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    .header-text p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width: 1165px) {
+    .top {
+        padding-left: 200px; 
+        padding-right: 200px; 
+    }
+
+    .projects {
+        padding-left: 90px; 
+        padding-right: 90px; 
+    }
+
+    .project-text {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .project-text h1 {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+
+    .project-text h5 {
+        margin-top: 5px;
+        margin-bottom: 7px;
+    }
+
+    .project-text p {
+        font-size: 12px;
+    }
+
+    .projects img {
+        width: 30%;
+    }
+
+    .project-link-wrapper img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .employment {
+        padding-left: 90px; 
+        padding-right: 90px; 
+    }
+
+    .employment p {
+        font-size: 12px;
+    }
+
+    .employment-dates {
+        font-size: 14px;
+    }
+
+    .album-content{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media all and (max-width: 1025px) {
+    .top {
+        padding-left: 150px; 
+        padding-right: 150px; 
+    }
+
+    .projects {
+        padding-left: 45px; 
+        padding-right: 45px; 
+    }
+
+    .projects img {
+        width: 25%;
+    }
+
+    .project-link-wrapper img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .employment {
+        padding-left: 45px; 
+        padding-right: 45px; 
+    }
+
+    .album-content{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+@media all and (max-width: 925px) {
+    .top {
+        padding-left: 100px; 
+        padding-right: 100px; 
+    }
+
+    .projects img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-link-wrapper img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .navbar {
+        padding-bottom: 20px;
+    }
+    header {
+        display: grid;
+        justify-items: center;
+        padding-bottom: 20px;
+    }
+
+    .header-text {
+        text-align-last: center;
+        width: 80%;
+    }
+
+    .header-text h4{
+        text-align: center;
+    }
+
+    .top {
+        padding-left: 0px; 
+        padding-right: 0px; 
+    }
+
+    .header-img {
+        width: 150px;
+        height: 150px;
+        margin-top: 29.5px;
+    }
+
+    .socials-link-wrapper {
+        width: 90px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .project-text {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .projects img {
+        display: none;
+    }
+
+    .project-link-wrapper img {
+        display: block;
+    }
+
+    .employment {
+        padding-bottom: 20px;
+    }
+
+    .employment-section {
+        display: grid;
+    }
+
+    .employment-text{
+        padding-bottom: 0px;
+    }
+
+    .employment-dates {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .navbar ul li{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .socials {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .socials-link-wrapper {
+        width: 70px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .socials-link-wrapper a {
+        font-size: 12px;
+    }
+
+    .projects {
+        padding-left: 20px; 
+        padding-right: 20px; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .employment {
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+
+    .project-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .employment-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .header-text h1 {
+        text-align: center;
+    }
+
+    .header-text p {
+        /* text-align: justify;
+        text-align-last: center; */
+        text-align: center;
+    }
+
+    .navbar {
+        padding-top: 32px;
+    }
+
+    .album-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media all and (min-width: 2160px){
+    .navbar {
+        max-width: 2160px;
+        margin: 0 auto;
+    }
+
+    .top {
+        max-width: 2160px;
+        margin: 0 auto;
+    }
+
+    .header-img {
+        max-width: 317px;
+        margin: 0 auto;
+    }
+
+    .projects h2 {
+        max-width: 2160px;
+        margin: 0 auto;
+    }
+
+    .project {
+        max-width: 2160px;
+        margin: 0 auto 60px;
+    }
+
+    .employment {
+        max-width: 2160px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        max-width: 2160px;
+        margin: 0 auto;
+    }
+}
