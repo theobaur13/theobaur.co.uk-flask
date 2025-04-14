@@ -1,7 +1,21 @@
 {
     "projects": [
         {
-            "id": 0,
+            "id": 1,
+            "name": "Super-Resolution Enhancement of Magnetic Resonance Images Using Deep Learning (In Progress)",
+            "description": "This project aims to develop and validate a deep learning-based super-resolution algorithm to computationally enhance the resolution of MRI images, effectively reconstructing high-resolution images comparable to those from 3T scans or full-resolution acquisitions, starting from lower resolution inputs. A key aspect of the project is the creation of a realistic training dataset which is achieved by simulating lower resolution MRI images from existing high-resolution datasets. The simulation process involves manipulating the k-space representation of high-resolution images to mimic the effects of lower resolution acquisition, considering factors like k-space undersampling and imaging sequence characteristics.",
+            "skills": ["Machine Learning", "Python", "JAX", "Pytorch"],
+            "links": [
+                {
+                    "class": "github",
+                    "text": "Source",
+                    "url": "https://github.com/theobaur13/MRI-Super-Resolution"
+                }
+            ],
+            "image": null
+        },
+        {
+            "id": 1,
             "name": "Mango-DMC-MLP (Mango Dry Matter Content Multilayer Perceptron)",
             "description": "A neural network model that predicts the dry matter content of mangoes based off of near-infrared spectroscopy absorbance data. This model was developed without the assistance of ML libraries and implemented entirely using NumPy with linear algebra to gain a better understanding of basic machine learning concepts such as bias, variance, and backpropagation. It consists of 3 hidden layers with 200, 50, and 10 neurons respectively, each using the ReLU activation function. The model was trained on a dataset of 3000 Near Infrared Spectroscopy (NIR) absorbance data samples and tested on a separate dataset of 1000 samples using 281 features.",
             "skills": ["Machine Learning", "Python", "NumPy", "Linear Algebra", "Backpropagation"],
@@ -20,7 +34,7 @@
             "image": "static/img/mango-dmc-mlp.png"
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "ESOTERIC - Elasticsearch Semantic Optimised Text Extraction Retrieval from Information Corpus",
             "description": "ESOTERIC is a tool that uses natural language processing to automatically retrieve and verify evidence for a given input claim. It is designed to assist fact-checkers and journalists in verifying claims made in news articles and other sources. ESOTERIC uses the FEVER dataset (Fact Extraction and VERification) as its source of information. It uses a multitude of different language models to perform various NLP tasks and even fine-tunes models to improve performance. It is wrapped in a Flask website that allows users to input a claim and view the evidence retrieved by the tool. ESOTERIC was my final year individual project for my degree in BSc Computer Science at Cardiff University and was awarded a grade of 84%.",
             "skills": ["Machine Learning", "NLP", "Hugging Face", "Elasticsearch", "Python", "HTML", "CSS", "JavaScript"],
@@ -44,7 +58,7 @@
             "image": "static/img/ESOTERIC.png"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Tool Share Cardiff",
             "description": "A Flask-based website designed to let users borrow tools from one another. This website uses Stripe to manage deposit payments and returns. Google Maps API tools are used to display an interactive map, calculate the distances for location searching, as well as geocoding location data. SQLite is used to manage the database. The website enables users to create an account, search for tools based on keywords or location, borrow tools by paying a deposit which is returned when the tool is returned, message other users using a simple chat system and report, and open disputes with other users.",
             "skills": ["Python", "HTML", "CSS", "JavaScript", "SQLite"],
@@ -63,7 +77,7 @@
             "image": "static/img/tool-sharing-website-1.png"
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "AIPlaylistNameGen.com",
             "description": "A Flask-based website hosted using Vercel that enables users to upload their Apple Music playlists and generate playlist names using GPT-3.5. The Apple Music API is used to connect to the user's account and retrieve both their playlists and the songs inside each playlist. The OpenAI API <i>text-davinci-003 </i>model is used to generate names for the playlists based on the songs inside them.",
             "skills": ["Python", "HTML", "CSS", "JavaScript"],
@@ -82,7 +96,7 @@
             "image": "static/img/ai-playlist-name-generator.png"
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Rate My Student Home Cardiff",
             "description": "A website designed to let Cardiff students rate their student homes. This website uses Google Maps API tools to display an interactive map.",
             "skills": ["Python", "HTML", "CSS", "JavaScript", "SQLite"],
@@ -96,7 +110,7 @@
             "image": "static/img/RMSH.png"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Personal Website",
             "description": "A Flask website (this one) hosted using Apache2 on a remote VPS designed to showcase my projects and photos. This website uses my own custom CSS stylesheet and JavaScript to display animations. The legacy version of this website was static and hosted using Netlify.",
             "skills": ["HTML", "CSS", "JavaScript"],
