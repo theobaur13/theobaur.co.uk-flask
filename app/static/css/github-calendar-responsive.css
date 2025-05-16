@@ -68,6 +68,7 @@ tool-tip {
     min-height: 175;
     text-align: center;
     margin: 0 auto;
+    max-width: 781px;
 }
 
 .calendar-graph text.wday,
