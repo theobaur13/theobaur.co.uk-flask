@@ -316,7 +316,7 @@ header {
 
 footer {
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 10px;
     background-color: rgba(95, 158, 160, 0);
 }
 
@@ -335,6 +335,7 @@ footer {
 }
 
 .center-footer p {
+    padding-top: 0px;
     margin: 0px;
 }
 
@@ -346,6 +347,7 @@ footer h4 {
 footer p{
     text-align: center;
     padding: 0%;
+    padding-top: 20px;
 }
 
 footer a{
