@@ -41,7 +41,7 @@
 
     <div class="album">
         {% for photo in photos %}
-            <div class="album-image">
+            <div class="album-image {% if photo.aspect_ratio < 1 %}portrait{% else %}landscape{% endif %}">
                 <a href="{{ url_for('static', filename=photo.path) }}" target="_blank">
                     <div class="image-placeholder" style="padding-bottom: {{ (1 / photo.aspect_ratio) * 100 }}% "></div>
                     <img src="{{ url_for('dynamic_image', album_id=album.album_id, filename=photo.path.split('/')[-1]) }}?width=1920&height=1080" alt="{{ photo.path }}" loading="lazy">
