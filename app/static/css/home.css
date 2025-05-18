@@ -223,11 +223,6 @@ header {
     color: var(--primary-color);
 }
 
-.projects p {
-    text-align: justify;
-    text-justify: auto;
-}
-
 .projects hr {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -279,11 +274,6 @@ header {
     padding-top: 50px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-}
-
-.employment p {
-    text-align: justify;
-    text-justify: auto;
 }
 
 .employment-section {
