@@ -165,6 +165,10 @@ h2.f4.text-normal.mb-3 {
     display: none;
 }
 
+.hide-sm {
+    display: none;
+}
+
 .float-left.text-gray {
     float: left;
 }
