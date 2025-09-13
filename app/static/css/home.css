@@ -279,6 +279,7 @@ header {
 .employment-section {
     background-color: var(--card-background);
     display: flex;
+    margin-bottom: 60px;
 
     border-radius: 3px;
     box-shadow: 2px 2px 0px var(--shadow);

@@ -1,8 +1,8 @@
 {
     "projects": [
         {
-            "id": 1,
-            "name": "Super-Resolution Enhancement of Magnetic Resonance Images Using Deep Learning (In Progress)",
+            "id": 0,
+            "name": "Super-Resolution Enhancement of Magnetic Resonance Images Using Deep Learning",
             "description": "This project aims to develop and validate a deep learning-based super-resolution algorithm to computationally enhance the resolution of MRI images, effectively reconstructing high-resolution images comparable to those from 3T scans or full-resolution acquisitions, starting from lower resolution inputs. A key aspect of the project is the creation of a realistic training dataset which is achieved by simulating lower resolution MRI images from existing high-resolution datasets. The simulation process involves manipulating the k-space representation of high-resolution images to mimic the effects of lower resolution acquisition, considering factors like k-space undersampling and imaging sequence characteristics.",
             "skills": ["Machine Learning", "Python", "JAX", "Pytorch"],
             "links": [
@@ -10,9 +10,14 @@
                     "class": "github",
                     "text": "Source",
                     "url": "https://github.com/theobaur13/MRI-Super-Resolution"
+                },
+                {
+                    "class": "document",
+                    "text": "Report",
+                    "url": "https://theobaur.co.uk/static/pdf/MRI-report.pdf"
                 }
             ],
-            "image": null
+            "image": "static/img/MRI.png"
         },
         {
             "id": 1,
@@ -137,11 +142,18 @@
     "employment": [
         {
             "id": 1,
+            "company": "Deloitte",
+            "role": "IT Audit Analyst",
+            "description": "Offer accepted for a full-time IT Audit role at Deloitte, starting in September 2025.",
+            "dates" : ["PRESENT", "SEPTEMBER 2025"]
+        },
+        {
+            "id": 1,
             "company": "Global Aerospace",
             "role": "Software Development Intern",
             "description": "Created an interface to input and normalize unformatted insurance policy data sent by banks to store in an internal database using Visual Basic and SQL. Created an automated interactive data analysis report system using PowerBI, integrated with the internal database via SQL, allowing for data projections, filtering, and insurance policy comparisons.",
             "skills" : ["Visual Basic", "SQL", "Power BI"],
-            "dates" : ["SUMMER 2024", "WINTER 2023/24", "SUMMER 2023"]
+            "dates" : ["SUMMER 2024", "SUMMER 2023"]
         }
     ]
 }
