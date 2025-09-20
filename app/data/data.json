@@ -83,7 +83,7 @@
         },
         {
             "id": 4,
-            "name": "AIPlaylistNameGen.com",
+            "name": "AIPlaylistNameGen",
             "description": "A Flask-based website hosted using Vercel that enables users to upload their Apple Music playlists and generate playlist names using GPT-3.5. The Apple Music API is used to connect to the user's account and retrieve both their playlists and the songs inside each playlist. The OpenAI API <i>text-davinci-003 </i>model is used to generate names for the playlists based on the songs inside them.",
             "skills": ["Python", "HTML", "CSS", "JavaScript"],
             "links": [
@@ -91,11 +91,6 @@
                     "class": "github",
                     "text": "Source",
                     "url": "https://github.com/theobaur13/playlist-name-generator"
-                },
-                {
-                    "class": "live",
-                    "text": "Live Site",
-                    "url": "https://www.aiplaylistnamegen.com/"
                 }
             ],
             "image": "static/img/ai-playlist-name-generator.png"
