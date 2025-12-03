@@ -3,7 +3,7 @@
         {
             "id": 0,
             "name": "Super-Resolution Enhancement of Magnetic Resonance Images Using Deep Learning",
-            "description": "This project aims to develop and validate a deep learning-based super-resolution algorithm to computationally enhance the resolution of MRI images, effectively reconstructing high-resolution images comparable to those from 3T scans or full-resolution acquisitions, starting from lower resolution inputs. A key aspect of the project is the creation of a realistic training dataset which is achieved by simulating lower resolution MRI images from existing high-resolution datasets. The simulation process involves manipulating the k-space representation of high-resolution images to mimic the effects of lower resolution acquisition, considering factors like k-space undersampling and imaging sequence characteristics.",
+            "description": "This project aims to develop and validate a deep learning-based super-resolution algorithm to computationally enhance the resolution of MRI images, effectively reconstructing high-resolution images comparable to those from 3T scans or full-resolution acquisitions, starting from lower resolution inputs. A key aspect of the project is the creation of a realistic training dataset which is achieved by simulating lower resolution MRI images from existing high-resolution datasets. The simulation process involves manipulating the k-space representation of high-resolution images to mimic the effects of lower resolution acquisition, considering factors like k-space undersampling and imaging sequence characteristics. This project was the subject of my MSc dissertation at Cardiff University and was awarded a grade of 85%.",
             "skills": ["Machine Learning", "Python", "JAX", "Pytorch"],
             "links": [
                 {
@@ -21,8 +21,8 @@
         },
         {
             "id": 1,
-            "name": "Mango-DMC-MLP (Mango Dry Matter Content Multilayer Perceptron)",
-            "description": "A neural network model that predicts the dry matter content of mangoes based off of near-infrared spectroscopy absorbance data. This model was developed without the assistance of ML libraries and implemented entirely using NumPy with linear algebra to gain a better understanding of basic machine learning concepts such as bias, variance, and backpropagation. It consists of 3 hidden layers with 200, 50, and 10 neurons respectively, each using the ReLU activation function. The model was trained on a dataset of 3000 Near Infrared Spectroscopy (NIR) absorbance data samples and tested on a separate dataset of 1000 samples using 281 features.",
+            "name": "Neural Network Built From Scratch",
+            "description": "Mango-DMC-MLP (Mango Dry Matter Content Multilayer Perceptron) is a neural network that predicts the dry matter content of mangoes based off of near-infrared spectroscopy absorbance data. This model was developed without the assistance of ML libraries and implemented entirely using NumPy with linear algebra to gain a better understanding of basic machine learning concepts such as bias, variance, and backpropagation. It consists of 3 hidden layers with 200, 50, and 10 neurons respectively, each using the ReLU activation function. The model was trained on a dataset of 3000 Near Infrared Spectroscopy (NIR) absorbance data samples and tested on a separate dataset of 1000 samples using 281 features.",
             "skills": ["Machine Learning", "Python", "NumPy", "Linear Algebra", "Backpropagation"],
             "links": [
                 {
