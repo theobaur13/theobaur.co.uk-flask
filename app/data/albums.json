@@ -2,24 +2,36 @@
     "albums" : [
         {
             "id": 1,
+            "name": "Holyrood Palace 2025",
+            "album_id": "Holyrood_Palace_2025",
+            "description": ""
+        },
+        {
+            "id": 2,
+            "name": "Gran Canaria 2025",
+            "album_id": "Gran_Canaria_2025",
+            "description": ""
+        },
+        {
+            "id": 3,
             "name": "Edinburgh 2024",
             "album_id": "Edinburgh_2024",
             "description": ""
         },
         {
-            "id": 2,
+            "id": 4,
             "name": "Lisbon 2024",
             "album_id": "Lisbon_2024",
             "description": ""
         },
         {
-            "id": 3,
+            "id": 5,
             "name": "Abergavenny 2024",
             "album_id": "Abergavenny_2024",
             "description": ""
         },
         {
-            "id": 4,
+            "id": 6,
             "name": "Columbia 2023",
             "album_id": "Columbia_2023",
             "description": ""
