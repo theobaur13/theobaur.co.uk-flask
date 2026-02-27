@@ -218,6 +218,10 @@ td.ContributionCalendar-label {
     display: none;
 }
 
+div.float-right.color-fg-muted.d-flex.flex-items-center {
+    display: none !important;
+}
+
 @media all and (max-width: 800px){
     .calendar {
         margin-left: 10px;
